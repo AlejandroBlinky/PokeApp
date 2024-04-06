@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import pokelogo from './img/pokebola.png'
+import logo from './img/avatar.png'
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -60,6 +62,7 @@ function App() {
   return (
     <div>
       <div className='navbar p-4 shadow mb-5 justify-content-between align-items-center' style={{ backgroundColor: 'rgba(85, 44, 140, 1)'}} >
+     <img src={logo} style={{ maxWidth: '100px', height: 'auto'}}></img>
      <h1 className='fw-bolder text-white'>Pokemon List</h1>
       <div className="d-flex">
     <input
@@ -84,7 +87,11 @@ function App() {
                   className="p-0 m-0 card-img"
                   alt={`Imagen de ${pokemon.name}`}
                 />
+                <div className='container d-flex col-6 justify-content-evenly'>
+                <img className='' src={pokelogo} style={{ maxWidth: '40px', height: '40px'}}></img>
                 <p className='fw-bold text-capitalize fs-4 text-center'>{pokemon.name}</p>
+                </div>
+                
               </li>
             ))}
         </ul>
