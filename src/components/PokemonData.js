@@ -62,7 +62,7 @@ function App() {
   return (
     <div>
       <div className='navbar p-4 shadow mb-5 justify-content-between align-items-center' style={{ backgroundColor: 'rgba(85, 44, 140, 1)'}} >
-     <img src={logo} style={{ maxWidth: '100px', height: 'auto'}}></img>
+     <img src={logo} style={{ maxWidth: '100px', height: 'auto'}} alt='logo'></img>
      <h1 className='fw-bolder text-white'>Pokemon List</h1>
       <div className="d-flex">
     <input
@@ -88,7 +88,7 @@ function App() {
                   alt={`Imagen de ${pokemon.name}`}
                 />
                 <div className='container d-flex col-6 justify-content-evenly'>
-                <img className='' src={pokelogo} style={{ maxWidth: '40px', height: '40px'}}></img>
+                <img className='' src={pokelogo} alt='pokelogo' style={{ maxWidth: '40px', height: '40px'}}></img>
                 <p className='fw-bold text-capitalize fs-4 text-center'>{pokemon.name}</p>
                 </div>
                 
